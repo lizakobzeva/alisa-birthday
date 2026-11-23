@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>С днём рождения, Алиса!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <main class="book" id="book">
+    <section class="page cover active" data-page="1">
+      <div class="paper-noise"></div>
+      <div class="cover-tape tape-a"></div>
+      <div class="cover-tape tape-b"></div>
+      <div class="cover-doodle doodle-spark">✦</div>
+      <div class="cover-doodle doodle-heart">♡</div>
+      <div class="cover-content">
+        <p class="hand title-top">С днём рождения</p>
+        <h1>Алиса!</h1>
+        <div class="firstpage-art">
+          <img src="firstpage/009-smushchyonnyy-kot-s-serdechkami-2000.webp" alt="Весёлый кот">
+          <img src="firstpage/028-ryzhe-belyy-kot-v-ochkah-2000.webp" alt="Кот в очках">
+          <img src="firstpage/054-kot-dzhentlmen-s-rozoy-2000.webp" alt="Кот с розой">
+        </div>
+        <p class="hand date">24 ноября · особенный день</p>
+      </div>
+      <button class="turn next" data-next="2" aria-label="Перевернуть страницу">листать <span>→</span></button>
+    </section>
+
+    <section class="page age-page" data-page="2">
+      <div class="paper-noise"></div>
+      <div class="binder"></div>
+      <p class="hand page-number">02</p>
+      <div class="age-content">
+        <p class="hand age-line" id="ageLine">тебе уже...</p>
+        <div class="age-animation" id="ageAnimation" aria-label="Белочки выносят цифру двадцать">
+          <div class="squirrel squirrel-left">
+            <img src="squiral/vecteezy_red-squirrel-in-alert-standing-pose_69115799.png" alt="Белочка">
+            <img src="squiral/vecteezy_a-squirrel-in-mid-leap-isolated-on-a-transparent-background_46981208.png" alt="Белочка в прыжке">
+          </div>
+          <div class="counter-space"><span class="carry-number" id="ageCounter">0</span></div>
+          <div class="squirrel squirrel-right">
+            <img src="squiral/vecteezy_squirrel-wearing-a-striped-birthday-hat-against-a-plain_55928459.png" alt="Белочка в шляпе">
+            <img src="squiral/vecteezy_squirrel-transparent-background-genereted-ai_47309080.png" alt="Белочка">
+          </div>
+        </div>
+        <p class="hand age-caption">и это только начало!</p>
+      </div>
+      <div class="page-nav">
+        <button class="turn prev" data-next="1" aria-label="Предыдущая страница">← назад</button>
+        <button class="turn next" data-next="3" aria-label="Следующая страница">дальше →</button>
+      </div>
+    </section>
+
+    <section class="page wishes-page" data-page="3">
+      <div class="paper-noise"></div>
+      <div class="binder"></div>
+      <p class="hand page-number">03</p>
+      <h2 class="hand section-title">чуть-чуть пожеланий...</h2>
+      <div class="polaroids">
+        <figure class="polaroid p1">
+          <div class="photo"><img src="wishes/5a7e85352009bfb28f0571d2c3186383.jpg" alt="Поздравление"></div>
+        </figure>
+        <figure class="polaroid p2">
+          <div class="photo"><img src="wishes/93dfe29b9be4f3edb096bbeb8a911ed2.jpg" alt="С днём рождения"></div>
+        </figure>
+        <figure class="polaroid p3">
+          <div class="photo"><img src="wishes/d015c91c6c0a72315d37693008149c0d.jpg" alt="Праздничное пожелание"></div>
+        </figure>
+        <figure class="polaroid p4">
+          <div class="photo"><img src="wishes/d832b7e55ab982bdb7254840a915eaaf.jpg" alt="Пожелание подруги"></div>
+        </figure>
+        <figure class="polaroid p5">
+          <div class="photo"><img src="wishes/wishes-two.png" alt="Праздничный мем с котом"></div>
+        </figure>
+      </div>
+      <div class="page-nav">
+        <button class="turn prev" data-next="2">← назад</button>
+        <button class="turn next" data-next="4">дальше →</button>
+      </div>
+    </section>
+
+    <section class="page final-page" data-page="4">
+      <div class="paper-noise"></div>
+      <div class="binder"></div>
+      <div class="final-sticker">для Алисы</div>
+      <div class="final-content">
+        <p class="hand small">на этот новый виток</p>
+        <h2>будь собой.<br>мечтай смело.<br>смейся громко.</h2>
+        <div class="final-heart">♡</div>
+        <p class="hand">с любовью и поздравлениями ✨</p>
+      </div>
+      <div class="page-nav">
+        <button class="turn prev" data-next="3">← назад</button>
+        <button class="turn next" data-next="1">в начало ↺</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
